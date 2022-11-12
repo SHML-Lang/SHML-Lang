@@ -5,7 +5,8 @@
 <br />
 
 <div align="center">
-<h3>ShellScript Hypertext Markup Language - Generates dynamic HTML content via ShellScript.</h3>
+<h3>ShellScript Hypertext Markup Language</h3>
+<h4>Generates dynamic HTML content via ShellScript.</h4>
 </div>
 
 <br /><br />
