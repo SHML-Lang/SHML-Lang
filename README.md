@@ -1,5 +1,5 @@
 <p align="center">
-<img src="shml.svg" />
+<img src="shml.svg" width="300em" />
 </p>
 
 <br />
