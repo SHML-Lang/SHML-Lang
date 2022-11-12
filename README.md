@@ -1,6 +1,14 @@
-# SHML
+<p align="center">
+<img src="shml.svg" />
+</p>
 
-**ShellScript Hypertext Markup Language** - Generates dynamic HTML content via ShellScript.
+<br />
+
+<div align="center">
+<h3>ShellScript Hypertext Markup Language - Generates dynamic HTML content via ShellScript.</h3>
+</div>
+
+<br /><br />
 
 ## **INSTALL**
 
