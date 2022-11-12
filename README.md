@@ -1,16 +1,77 @@
-### Hi there 👋
+# SHML
 
+**ShellScript Hypertext Markup Language** - Generates dynamic HTML content via ShellScript.
+
+## **INSTALL**
+
+Requirements: **Web Server (Apache2 | Nginx) and FCGI Wrap**
+
+### _LINUX_ (Debian)
+
+**FCGI Wrap**
+
+_debian@debian:~$_ **su**
+
+_root@debian:~#_ **apt install fcgiwrap**
+
+**Apache2 Modules**
+
+_debian@debian:~$_ **su -**
+
+_root@debian:~#_ **a2enmod proxy_fcgi**
+
+_root@debian:~#_ **/etc/init.d/apache2 restart**
+
+---
+
+**SHML**
+
+_root@debian:~#_ **sh install.sh**
+
+- Your shell functions must be declared or included in the file: **/usr/share/shml/library.sh**
+
+- Place the index.shml file in the public directory of the web server.
+
+---
+
+**index.shml**
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>SHML <% version() %></title>
+</head>
+<body>
 <!--
-**SHML-Lang/SHML-Lang** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-Here are some ideas to get you started:
+Block comment...
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
 -->
+<h1>It worked! <% print("Welcome!") %></h1>
+<!-- Inline comment -->
+<hr>
+<h2><% hello_world() %></h2>
+<h3><% date(%Y-%m-%d) %></h3>
+</body>
+</html>
+```
+
+Result:
+
+---
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>SHML 1.0.0</title>
+</head>
+<body>
+<h1>It worked! Welcome!</h1>
+<hr>
+<h2>Hello World!</h2>
+<h3>2022-10-20</h3>
+</body>
+</html>
+```
